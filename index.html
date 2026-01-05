@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         .a {
+            width: 100%;
+        }
+
+        .b {
+            display: flex;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .bg-danger {
+            background: red;
+        }
+
+        .bg-success {
+            background: green;
+        }
+
+        /*-----------Responsive (Mobile View)---------*/
+        @media(max-width:768px) {
+            .b {
+                flex-direction: column;
+                /*side-by-side -> top-bottom */
+            }
+
+            .col-6 {
+                width: 100%;
+                /*full width in mobile */
+            }
+        }
+
+         .c {
+            padding-top: 60px;
+            width: 100%;
+        }
+
+        .d {
+            display: flex;
+        }
+
+        .col-4 {
+            width: 33%;
+        }
+
+        .bg-danger {
+            background: yellow;
+        }
+
+        .bg-success {
+            background: pink;
+        }
+
+        @media(max-width:768px) {
+            .g{
+                flex-direction: column;
+            }
+
+            .col-4 {
+                width: 100%;
+            }
+        }
+
+        .f {
+            width: 100%;
+            padding-top: 100px;
+        }
+
+        .g {
+            display: flex;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .bg-danger {
+            background: blue;
+        }
+
+        .bg-danger {
+            background: blueviolet;
+        }
+        
+        @media(max-width:768px) {
+            .d {
+                flex-direction: column;
+            }
+
+            .col-3 {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="b">
+            <div class="col-6 bg-danger">
+                <h2>Hello</h2>
+            </div>
+
+            <div class="col-6 bg-success">
+                <h2>Hello</h2>
+            </div>
+
+        </div> 
+    <!--b div end-->
+
+    </div>
+    <!-- a div end-->
+
+    <div class="c">
+        <div class="d">
+            <div class="col-4 bg-danger">
+                <h2>hello</h2>
+            </div>
+            <div class="col-4 bg-success">
+                <h2>hello</h2>
+            </div>
+            <div class="col-4 bg-danger">
+                <h2>hello</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--f div start-->
+    <div class="f">
+        <div class="g">
+            <div class="col-3 bg-danger">
+                <h2>Hello</h2>
+            </div>
+            <div class="col-3 bg-success">
+                <h2>Hello</h2>
+            </div>
+            <div class="col-3 bg-danger">
+                <h2>Hello</h2>
+            </div>
+            <div class="col-3 bg-success">
+                <h2>Hello</h2>
+            </div>
+
+        </div>
+
+    </div>
+    <!--f div end-->
+
+</body>
+
+</html>
