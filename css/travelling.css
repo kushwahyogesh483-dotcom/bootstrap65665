@@ -1,0 +1,36 @@
+body{ scroll-behavior:smooth; }
+
+    .banner-img{
+      height:100vh;
+      object-fit:cover;
+    }
+
+    .carousel-caption{
+      bottom:40%;
+    }
+
+    .carousel-caption h1{
+      font-size:55px;
+      font-weight:bold;
+    }
+
+    .section-title{
+      font-weight:bold;
+      margin-bottom:40px;
+    }
+
+    .footer-title{
+      font-weight:bold;
+      margin-bottom:15px;
+    }
+
+    .footer-link{
+      color:#ccc;
+      text-decoration:none;
+    }
+
+    .footer-link:hover{
+      color:#ffc107;
+      padding-left:5px;
+      transition:.3s;
+    }
